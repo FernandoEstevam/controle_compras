@@ -1,0 +1,20 @@
+{
+  "name": "controle_compras",
+  "version": "1.0.0",
+  "description": "App para controle e lista de compras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoEstevam/controle_compras.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoEstevam/controle_compras/issues"
+  },
+  "homepage": "https://github.com/FernandoEstevam/controle_compras#readme"
+}
