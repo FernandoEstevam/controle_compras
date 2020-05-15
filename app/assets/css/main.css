@@ -14,9 +14,7 @@ input {
 
 html {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  width: 100vw;
-  height: 100vh; }
+  font-family: 'Poppins', sans-serif; }
 
 .container {
   max-width: 300px;
