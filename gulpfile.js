@@ -17,7 +17,7 @@ const dist = 'dist';
 
 // SCSS
 gulp.task('scss', () => {
-  return gulp.src(scss_dir)
+  return gulp.src([scss_dir,'!app/assets/scss/variavel/**'])
     .pipe(scss())
     .pipe(gulp.dest(css_dir));
 });
