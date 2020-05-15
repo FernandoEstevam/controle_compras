@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .container header {
+    text-align: center; }
+  .container #frm-login .group-input {
+    margin-bottom: 20px;
+    position: relative; }
+    .container #frm-login .group-input input {
+      width: 100%;
+      padding-left: 40px; }
+    .container #frm-login .group-input .icons {
+      position: absolute;
+      top: 8px;
+      left: 10px; }
+  .container #frm-login .btn-primary {
+    width: 100%;
+    margin-top: 60px; }

@@ -1,0 +1,49 @@
+@import 'variavel/variavel.scss';
+@import 'reset.scss';
+
+html{
+  font-size: $font-size-principal;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+
+  .titulo {
+    font-size: $font-titulo;
+    color: $font-color-cinza;
+    font-weight: $font-medio;
+    line-height: 15px;
+  }
+}
+
+header {
+  margin-bottom: 50px;
+  .sub-titulo {
+    font-size: $font-sub-titulo;
+  }
+}
+
+form {
+  .group-input{
+    width: 100%;
+  }
+  
+  input{
+    @include input;
+    color: #000;
+  }
+
+  .btn {
+    @include btn;
+ }
+
+ .btn-primary {
+   background-color: $azul;
+ }
+
+}
