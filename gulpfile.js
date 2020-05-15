@@ -41,8 +41,9 @@ gulp.task('browserSync', () => {
   browsersync.init({
     server: {
       baseDir: 'app'
-    },
-  })
+    }
+  });
+  gulp.watch('app/*.html').on("change", browsersync.reload);
 })
 
 // Verifica mudanças no arquivos
@@ -51,6 +52,7 @@ gulp.task('watch', ()=>{
   gulp.watch(app + '*.html', gulp.series('minifi'));
   gulp.watch(css_dir, gulp.series('minifi'));
   gulp.watch(js, gulp.series('minifi'));
+  // gulp.watch('app/assets/**/*.*', browsersync.reload);
 });
 
 
