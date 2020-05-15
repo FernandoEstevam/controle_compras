@@ -17,4 +17,10 @@
       left: 10px; }
   .container #frm-login .btn-primary {
     width: 100%;
-    margin-top: 60px; }
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container #frm-login .btn-primary .icons {
+      display: block;
+      margin-right: 10px; }
