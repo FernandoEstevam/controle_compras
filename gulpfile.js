@@ -7,6 +7,8 @@ const uglify = require('gulp-uglify');
 const gulpif = require('gulp-if');
 const useref = require('gulp-useref');
 const cssnano = require('gulp-cssnano');
+const browsersync = require('browser-sync').create();
+
 
 // diretorios
 const app = 'app/';
@@ -19,7 +21,8 @@ const dist = 'dist';
 gulp.task('scss', () => {
   return gulp.src([scss_dir,'!app/assets/scss/variavel/**'])
     .pipe(scss())
-    .pipe(gulp.dest(css_dir));
+    .pipe(gulp.dest(css_dir))
+    .pipe(browsersync.reload({stream: true}));
 });
 
 // Minificando arquivos
@@ -33,6 +36,15 @@ gulp.task('minifi', () => {
     .pipe(gulp.dest(dist));
 });
 
+// Browser sync
+gulp.task('browserSync', () => {
+  browsersync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
+})
+
 // Verifica mudanças no arquivos
 gulp.task('watch', ()=>{
   gulp.watch(scss_dir, gulp.series('scss'));
@@ -43,4 +55,4 @@ gulp.task('watch', ()=>{
 
 
 // Tarefa padrão
-gulp.task('run-task', gulp.series('scss','minifi','watch'));
+gulp.task('run-task', gulp.series('browserSync','scss','minifi','watch'));
