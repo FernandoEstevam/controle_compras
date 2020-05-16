@@ -1,8 +1,9 @@
 .group-btn {
+	width: 100%;
 	a.btn{
-		margin-bottom: 15px;
 		position: relative;
-		
+		margin: 0 auto;	
+		margin-top: 15px;
 		.icons{
 			position: absolute;
 			left: 10px; 

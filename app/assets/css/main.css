@@ -17,9 +17,15 @@ html {
   font-family: 'Poppins', sans-serif; }
 
 .container {
-  max-width: 300px;
+  max-width: 414px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px; }
+  .container header {
+    width: 100%; }
   .container .info-header {
     display: flex;
     align-items: center;
@@ -30,7 +36,7 @@ html {
       height: 30px; }
     .container .info-header .icon-name {
       display: flex;
-      width: 70%;
+      width: 100%;
       align-items: center; }
       .container .info-header .icon-name .name-header {
         margin-left: 5px;
@@ -85,3 +91,7 @@ form input {
 .icons {
   width: 20px;
   height: 20px; }
+
+.font-titulo-table {
+  font-size: 0.8em;
+  color: #333; }

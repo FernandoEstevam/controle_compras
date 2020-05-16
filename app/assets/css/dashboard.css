@@ -1,9 +1,11 @@
-.group-btn a.btn {
-  margin-bottom: 15px;
-  position: relative; }
-  .group-btn a.btn .icons {
-    position: absolute;
-    left: 10px; }
-
-.group-btn a.btn-danger {
-  margin-top: 30px; }
+.group-btn {
+  width: 100%; }
+  .group-btn a.btn {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px; }
+    .group-btn a.btn .icons {
+      position: absolute;
+      left: 10px; }
+  .group-btn a.btn-danger {
+    margin-top: 30px; }
