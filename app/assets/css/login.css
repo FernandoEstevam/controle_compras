@@ -5,6 +5,8 @@
   justify-content: center; }
   .container header {
     text-align: center; }
+    .container header .titulo {
+      line-height: 15px; }
   .container #frm-login .group-input {
     margin-bottom: 20px;
     position: relative; }
@@ -12,9 +14,9 @@
       width: 100%;
       padding-left: 40px; }
     .container #frm-login .group-input .icons {
-      position: absolute;
-      top: 8px;
-      left: 10px; }
+      position: absolute !important;
+      top: 8px !important;
+      left: 10px !important; }
   .container #frm-login .btn-primary {
     width: 100%;
     margin-top: 60px;

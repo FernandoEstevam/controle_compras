@@ -20,11 +20,26 @@ html {
   max-width: 300px;
   width: 100%;
   margin: 0 auto; }
+  .container .info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .container .info-header .icons {
+      width: 30px;
+      height: 30px; }
+    .container .info-header .icon-name {
+      display: flex;
+      width: 70%;
+      align-items: center; }
+      .container .info-header .icon-name .name-header {
+        margin-left: 5px;
+        font-size: 0.7em; }
   .container .titulo {
     font-size: 1.2em;
     color: #333;
     font-weight: 500;
-    line-height: 15px; }
+    text-align: center; }
 
 header {
   margin-bottom: 50px; }
@@ -44,17 +59,29 @@ form input {
   padding: 5px 8px;
   color: #000; }
 
-form .btn {
+.btn {
   font-size: 0.9em;
-  font-weight: 700;
   border: none;
   max-width: 300px;
   border: none;
   height: 40px;
   text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
-form .btn-primary {
+.btn-primary {
   background-color: #3B6EF3; }
+
+.btn-danger {
+  background-color: #F03C3C; }
+
+.btn-green {
+  background-color: #0BA111; }
+
+.icons {
+  width: 20px;
+  height: 20px; }

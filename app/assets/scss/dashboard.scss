@@ -1,0 +1,14 @@
+.group-btn {
+	a.btn{
+		margin-bottom: 15px;
+		position: relative;
+		
+		.icons{
+			position: absolute;
+			left: 10px; 
+		}
+	}
+	a.btn-danger{
+		margin-top: 30px;
+	}
+}

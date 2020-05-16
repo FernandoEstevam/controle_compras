@@ -12,6 +12,7 @@ $font-bold: 700;
 // Color
 $azul: #3B6EF3;
 $vermelho: #F03C3C;
+$verde: #0BA111; 
 $font-color-cinza: #333;
 $font-color-cinza-input: #ACACAC;
 $font-color-branco: #fff;
@@ -29,13 +30,15 @@ $font-color-branco: #fff;
 
 @mixin btn {
   font-size: $font-btn;
-  font-weight: $font-bold;
   border: none;
   max-width: 300px;
   border: none;
   height: 40px;
   text-align: center;
-  display: block;
+  display: flex;
+	align-items: center;
+	justify-content: center;
   border-radius: 5px;
   color: $font-color-branco;
+	cursor: pointer;
 }

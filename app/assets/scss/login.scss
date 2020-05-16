@@ -6,7 +6,11 @@
 
   header {
     text-align: center;
-  }
+		
+		.titulo {
+			line-height: 15px;
+		}
+	}
   
   #frm-login {
 
@@ -20,9 +24,9 @@
     }
 
     .icons {
-      position: absolute;
-      top: 8px;
-      left: 10px;
+      position: absolute !important;
+      top: 8px !important;
+      left: 10px !important;
     }
   }
 

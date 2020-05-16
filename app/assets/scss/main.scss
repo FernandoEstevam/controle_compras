@@ -15,13 +15,37 @@ html, body {
   max-width: 300px;
   width: 100%;
   margin: 0 auto;
+	
+	.info-header{
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 20px 0;
+
+		.icons{
+			width:30px;
+			height: 30px;
+		}
+
+		.icon-name{
+			display: flex;
+			width:70%;
+			align-items: center;
+			
+			.name-header{
+				margin-left: 5px;
+				font-size: $font-user;
+			}
+		}
+	}
+
 
   .titulo {
     font-size: $font-titulo;
     color: $font-color-cinza;
     font-weight: $font-medio;
-    line-height: 15px;
-  }
+		text-align: center;
+	}
 }
 
 header {
@@ -40,13 +64,26 @@ form {
     @include input;
     color: #000;
   }
-
-  .btn {
-    @include btn;
  }
 
- .btn-primary {
-   background-color: $azul;
- }
-
+.btn {
+	@include btn;
 }
+
+.btn-primary {
+	background-color: $azul;
+}
+
+.btn-danger{
+	background-color: $vermelho;
+}
+
+.btn-green{
+	background-color: $verde;
+}
+
+.icons {
+	width: 20px;
+	height: 20px;
+}
+//a{padding: 8px 5px}
