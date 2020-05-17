@@ -3,8 +3,6 @@ form .group-input {
   form .group-input input {
     max-width: 100% !important;
     width: 100%; }
-  form .group-input select {
-    width: 60px; }
 
 form .group-btn {
   width: 100%;

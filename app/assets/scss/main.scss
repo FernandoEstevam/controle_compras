@@ -66,10 +66,14 @@ form {
     width: 100%;
   }
   
-  input{
+  input, select{
     @include input;
 		color: #000;
   }
+	select{
+		background-color: #fff;
+		outline: none;
+	}
 	textarea{	
 		width:100%;
 		height: 150px;
@@ -115,6 +119,8 @@ table{
 	text-align: center;
 
 	th {
+		font-size: $font-input;
+		font-weight: $font-medio;
 		padding-bottom: 10px;
 	}
 
@@ -125,7 +131,6 @@ table{
 
 	th, td {
 		border-bottom: 1px solid $font-color-cinza-input;
-		
 	}
 }
 
