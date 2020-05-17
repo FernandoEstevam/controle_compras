@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Adicionar produto</title>
+		<link href="https://fonts.google.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+		<!-- build:css assets/css/main.min.css -->
+		<link rel="stylesheet" href="assets/css/main.css"	>
+		<!-- endbuild -->
+		<!-- build:css assets/css/add_prod.min.css -->
+		<link rel="stylesheet" href="assets/css/add_prod.css">
+		<!-- endbuild -->
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="info-header">
+					<span class="icons icon-name">
+						<img src="assets/image/icons/person_header.svg" alt="icone persona" />
+						<span class="name-header">Fernando A. Estevam</span>
+					</span>
+				</div>
+				<h1 class="titulo">adicionar produto</h1>
+			</header>
+			<section>
+				<form action="#" method="post" id="form-add-prod">
+					<div class="group-input">
+						<input type="text" name="nome" id="nome" placeholder="digite produto">
+					</div>
+					<div class="group-input">
+						<input type="text" name="categoria" id="categoria" placeholder="categoria"/>
+					</div>
+					<div class="group-input">
+						<textarea id="descricao" name="descricao" placeholder="descrição produto"></textarea>
+					</div>
+					<div class="group-btn">
+						<buttom type="submit" class="btn btn-primary">adicionar</buttom>
+						<a class="btn btn-danger">voltar</a>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
