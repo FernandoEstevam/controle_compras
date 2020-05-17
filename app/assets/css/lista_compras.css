@@ -1,0 +1,20 @@
+.lista-compras .group-form + a {
+  margin: 40px auto; }
+
+form {
+  margin-bottom: 20px; }
+  form .group-list-prod .group-input {
+    display: grid;
+    grid-template-columns: 150px 40px 110px;
+    grid-gap: 10px;
+    margin-bottom: 10px; }
+  form .group-list-prod .group-btn {
+    display: flex; }
+    form .group-list-prod .group-btn button, form .group-list-prod .group-btn a {
+      display: flex;
+      width: 100px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px; }
+    form .group-list-prod .group-btn .btn-danger {
+      margin: 0 10px; }
