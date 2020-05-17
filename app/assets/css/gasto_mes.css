@@ -1,0 +1,13 @@
+section {
+  width: 100%; }
+  section .info-total {
+    border-bottom: 1px solid #ACACAC;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    section .info-total span {
+      font-size: 0.8em; }
+  section .btn-danger {
+    margin-top: 30px; }
